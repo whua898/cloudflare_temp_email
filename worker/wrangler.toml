@@ -26,14 +26,14 @@ crons = [ "0 0 * * *" ]
 
 [vars]
 # 邮箱名称前缀，不需要后缀可配置为空字符串或者不配置
-PREFIX = "tmp"
+PREFIX = ""
 # 用于临时邮箱的所有域名, 支持多个域名
 DOMAINS = ["wh8.xx.kg" , "xx2.xx.kg"]
 # 用于生成 jwt 的密钥, jwt 用于给用户登录以及鉴权
 JWT_SECRET = "wh898_aB3$kL9#mP2!"
 
 # admin 控制台密码, 不配置则不允许访问控制台
-ADMIN_PASSWORDS = ["wh898", "whua898"]
+ADMIN_PASSWORDS = ["wh8", "wh898", "whua898"]
 
 # 是否允许用户创建邮件, 不配置则不允许
 ENABLE_USER_CREATE_EMAIL = true
