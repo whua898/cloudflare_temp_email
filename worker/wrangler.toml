@@ -4,19 +4,20 @@ compatibility_date = "2024-09-23"
 compatibility_flags = [ "nodejs_compat" ]
 
 # 如果你想使用自定义域名，你需要添加 routes 配置
-# routes = [
-#  { pattern = "temp-email-api.xxxxx.xyz", custom_domain = true },
-# ]
+routes = [
+ { pattern = "email.xx2.xx.kg", custom_domain = true },
+ { pattern = "email.wh8.xx.kg", custom_domain = true },
+]
 
 # 如果你想要部署带有前端资源的 worker, 你需要添加 assets 配置
-# [assets]
-# directory = "../frontend/dist/"
-# binding = "ASSETS"
-# run_worker_first = true
+[assets]
+directory = "../frontend/dist/"
+binding = "ASSETS"
+run_worker_first = true
 
 # 如果你想要使用定时任务清理邮件，取消下面的注释，并修改 cron 表达式
-# [triggers]
-# crons = [ "0 0 * * *" ]
+[triggers]
+crons = [ "0 0 * * *" ]
 
 # 通过 Cloudflare 发送邮件
 # send_email = [
@@ -46,9 +47,9 @@ database_name = "temp_email" # D1 数据库名称
 database_id = "460ea0fa-3975-4c0a-b7c3-a567e2717b29" # D1 数据库 ID
 
 # kv config 用于用户注册发送邮件验证码，如果不启用用户注册或不启用注册验证，可以不配置
-# [[kv_namespaces]]
-# binding = "KV"
-# id = "xxxx"
+[[kv_namespaces]]
+binding = "KV"
+id = "bb395cd3a54543898654ae8b2cde1e7e"
 
 # 新建地址限流配置 /api/new_address
 # [[unsafe.bindings]]
