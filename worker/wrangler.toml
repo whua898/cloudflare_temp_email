@@ -5,7 +5,7 @@ compatibility_flags = [ "nodejs_compat" ]
 
 # 如果你想使用自定义域名，你需要添加 routes 配置
 routes = [
- { pattern = "email.wh8.xx.kg", custom_domain = true }
+ { pattern = "email.8dy.xx.kg", custom_domain = true }
 ]
 
 # 如果你想要部署带有前端资源的 worker, 你需要添加 assets 配置
@@ -27,7 +27,7 @@ crons = [ "0 0 * * *" ]
 # 邮箱名称前缀，不需要后缀可配置为空字符串或者不配置
 PREFIX = ""
 # 用于临时邮箱的所有域名, 支持多个域名
-DOMAINS = ["wh8.xx.kg"]
+DOMAINS = ["8dy.xx.kg"]
 # 用于生成 jwt 的密钥, jwt 用于给用户登录以及鉴权
 JWT_SECRET = "_aB3$kL9#mP2!"
 
