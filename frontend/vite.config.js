@@ -12,6 +12,16 @@ import wasm from "vite-plugin-wasm";
 export default defineConfig({
   build: {
     outDir: './dist',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'naive-ui': ['naive-ui'],
+          'wangeditor': ['@wangeditor/editor', '@wangeditor/editor-for-vue'],
+          'jszip-vendor': ['jszip'],
+          'postal-mime': ['postal-mime'],
+        },
+      },
+    },
   },
   plugins: [
     vue(),
